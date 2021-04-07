@@ -3,10 +3,19 @@ const button = document.getElementsByTagName("button")[0];
 const ul = document.querySelector(".main__to-dos");
 
 button.addEventListener("click", function () {
-  const checkbox = document.createElement("span");
-  const newLi = document.createElement("li");
-  checkbox.textContent = "\u25a1";
-  newLi.textContent = input.value;
-  ul.appendChild(checkbox);
-  ul.appendChild(newLi);
-})
+  if (input.value == "") {
+    alert("Please type something to do...");
+  } else {
+    const div = document.createElement("div");
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
+    const newLi = document.createElement("li");
+    newLi.style.listStyleType = "none";
+    newLi.style.display = "inline";
+    newLi.textContent = input.value;
+    newLi.style.marginLeft = "1rem";
+
+  }
+});
