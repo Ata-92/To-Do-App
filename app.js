@@ -5,6 +5,12 @@ const ul = document.querySelector(".main__to-dos");
 
 button.addEventListener("click", itemAdd);
 
+input.addEventListener("keydown", (key) => {
+  if (key.code == "Enter") {
+    itemAdd();
+  }
+});
+
 function itemAdd() {
   if (input.value == "") {
     alert("Please type something to do...");
