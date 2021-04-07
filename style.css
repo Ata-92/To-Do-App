@@ -28,6 +28,10 @@ h1 {
   justify-content: space-evenly;
 }
 
+.main__icon {
+  width: 2rem;
+}
+
 .main__box {
   width: 32rem;
   padding: 1rem;
