@@ -17,5 +17,14 @@ button.addEventListener("click", function () {
     newLi.textContent = input.value;
     newLi.style.marginLeft = "1rem";
 
+    div.appendChild(checkbox);
+    div.appendChild(newLi);
+    div.style.width = "15rem";
+    div.style.padding = "1rem";
+    div.style.border = ".1rem solid black";
+    div.style.borderRadius = "1rem";
+
+    ul.appendChild(div);
+
   }
 });
