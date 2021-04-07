@@ -16,13 +16,16 @@ button.addEventListener("click", function () {
     newLi.style.display = "inline";
     newLi.textContent = input.value;
     newLi.style.marginLeft = "1rem";
+    newLi.style.color = "black";
 
     div.appendChild(checkbox);
     div.appendChild(newLi);
-    div.style.width = "15rem";
+    div.style.width = "38rem";
     div.style.padding = "1rem";
-    div.style.border = ".1rem solid black";
+    div.style.margin = "1rem 0";
+    div.style.backgroundColor = "white";
     div.style.borderRadius = "1rem";
+    div.style.textAlign = "left";
 
     ul.appendChild(div);
 
@@ -30,7 +33,7 @@ button.addEventListener("click", function () {
     checkbox.addEventListener("click", function () {
       counter++;
       if (counter % 2 == 1) {
-        div.style.backgroundColor = "green";
+        div.style.backgroundColor = "yellowgreen";
         newLi.style.textDecoration = "line-through";
       } else {
         div.style.backgroundColor = "white";
