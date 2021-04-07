@@ -26,5 +26,16 @@ button.addEventListener("click", function () {
 
     ul.appendChild(div);
 
+    let counter = 0;
+    checkbox.addEventListener("click", function () {
+      counter++;
+      if (counter % 2 == 1) {
+        div.style.backgroundColor = "green";
+        newLi.style.textDecoration = "line-through";
+      } else {
+        div.style.backgroundColor = "white";
+        newLi.style.textDecoration = "none";
+      }
+    });
   }
 });
