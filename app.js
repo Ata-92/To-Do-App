@@ -5,8 +5,6 @@ const ul = document.querySelector(".main__to-dos");
 
 button.addEventListener("click", itemAdd);
 
-
-
 function itemAdd() {
   if (input.value == "") {
     alert("Please type something to do...");
@@ -57,6 +55,8 @@ function itemAdd() {
       }
     });
 
-
+    bin.addEventListener("click", function itemDelete() {
+      div.remove();
+    });
   }
 };
