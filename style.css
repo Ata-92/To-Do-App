@@ -11,6 +11,10 @@ html {
 body {
   background-color: blue;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -57,13 +61,13 @@ h1 {
 769px — 1024px: Small screens, laptops.
 1025px — 1200px: Desktops, large screens. */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-height: 400px) {
   html {
     font-size: 10px;
   }
